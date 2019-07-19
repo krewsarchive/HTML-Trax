@@ -92,15 +92,16 @@ input:not(:disabled) {
 }
 #traxmachine div#cartuchos div#cartuchos-list div.cartucho span {
 	color: white;
-    font-size: 6pt;
-    position: relative;
+  font-size: 9px;
+  position: relative;
+	line-height: 11px;
 }
 #traxmachine div#cartuchos div#cartuchos-list div.cartucho img:hover ~ span:after {
 	content: "Usar";
-    position: absolute;
-    left: 0;
-    bottom: -1em;
-    color: lightgreen;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  color: lightgreen;
 }
 #traxmachine div#cartuchos div#cartuchos-pager {
 	background-image: url(../imgs/pager-background.png);
@@ -190,15 +191,15 @@ div.palheta > div.header:hover:after {
 	text-shadow: -1px 0px 0px black, 0px -1px 0px black, -1px -1px 0px black, 1px 0px 0px black, 0px 1px 0px black, 1px 1px 0px black;
 }
 div.palheta div span {
-	font-family: sans-serif;
-	font-size: 6pt;
+	font-family: 'Volter';
+	font-size: 9px;
 	line-height: 23px;
 	white-space: nowrap;
 	max-width: 85px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
-    text-shadow: -1px 0px 0px black, 0px -1px 0px black, -1px -1px 0px black, 1px 0px 0px black, 0px 1px 0px black, 1px 1px 0px black;
+	filter: brightness(0.5);
 }
 ul.piker {
 	font-size: 0;
@@ -498,4 +499,9 @@ input#agulha[type=range]::-webkit-slider-thumb {
   width: 25px;
   margin-top: -107px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   pointer-events: none;
+}
+.module:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
